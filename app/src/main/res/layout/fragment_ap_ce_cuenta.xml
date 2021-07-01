@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentApCeCuenta">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:dropDownWidth="150dp"
+            android:popupBackground="@color/teal_200"
+            android:background="@color/teal_200"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <Switch
+            android:id="@+id/sw_estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESTADO:"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="15dp"
+            android:switchPadding="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp">
+
+            <android.widget.Button
+                android:id="@+id/btn_aceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="Aceptar"/>
+
+            <android.widget.Button
+                android:id="@+id/btn_cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="Cancelar"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
